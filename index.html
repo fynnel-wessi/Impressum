@@ -5,96 +5,95 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Premium Website</title>
+<title>NordKraft0809</title>
 
 <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 
-
 * {
     box-sizing: border-box;
 }
 
-
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #050505;
-    color: white;
-    overflow-x: hidden;
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:#050505;
+    color:white;
+    overflow-x:hidden;
 }
 
 
-/* Leuchtender Hintergrund */
+/* Neon Hintergrund */
 
-body::before {
-    content: "";
-    position: fixed;
-    width: 500px;
-    height: 500px;
-    background: #7c00ff;
-    filter: blur(180px);
-    top: -100px;
-    left: -100px;
-    opacity: 0.5;
-    z-index: -1;
+body:before {
+    content:"";
+    position:fixed;
+    width:600px;
+    height:600px;
+    background:#00eaff;
+    filter:blur(180px);
+    opacity:.25;
+    top:-200px;
+    left:-200px;
+    z-index:-1;
+}
+
+body:after {
+    content:"";
+    position:fixed;
+    width:600px;
+    height:600px;
+    background:#9d00ff;
+    filter:blur(180px);
+    opacity:.25;
+    bottom:-200px;
+    right:-200px;
+    z-index:-1;
 }
 
 
-body::after {
-    content: "";
-    position: fixed;
-    width: 500px;
-    height: 500px;
-    background: #00eaff;
-    filter: blur(180px);
-    bottom: -100px;
-    right: -100px;
-    opacity: 0.4;
-    z-index: -1;
-}
 
-
+/* Navigation */
 
 header {
 
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
 
-    width: 90%;
-    max-width: 1000px;
+width:90%;
+max-width:1100px;
 
-    padding: 20px 35px;
+padding:20px 35px;
 
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(20px);
+background:rgba(255,255,255,.08);
 
-    border: 1px solid rgba(255,255,255,0.15);
+backdrop-filter:blur(20px);
 
-    border-radius: 30px;
+border:1px solid rgba(255,255,255,.15);
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+border-radius:30px;
 
-    z-index:10;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+z-index:10;
 
 }
-
 
 
 .logo {
 
-    font-size:25px;
-    font-weight:800;
+font-size:25px;
+font-weight:800;
 
-    background: linear-gradient(90deg,#00eaff,#9d00ff);
+background:linear-gradient(90deg,#00eaff,#9d00ff);
 
-    -webkit-background-clip:text;
-    color:transparent;
+-webkit-background-clip:text;
+color:transparent;
 
 }
 
@@ -102,121 +101,68 @@ header {
 
 nav a {
 
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-
-    transition:.3s;
-
-}
-
-
-nav a:hover {
-
-    color:#00eaff;
-    text-shadow:0 0 15px #00eaff;
-
-}
-
-
-
-.hero {
-
-    height:100vh;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-
-    padding:20px;
-
-}
-
-
-
-.hero h1 {
-
-    font-size:80px;
-    margin:0;
-
-    background:linear-gradient(90deg,#00eaff,#9d00ff);
-
-    -webkit-background-clip:text;
-    color:transparent;
-
-    animation: glow 3s infinite alternate;
-
-}
-
-
-
-.hero p {
-
-    font-size:22px;
-    color:#ccc;
-
-}
-
-
-
-@keyframes glow {
-
-from {
-text-shadow:0 0 20px #00eaff;
-}
-
-to {
-text-shadow:0 0 60px #9d00ff;
-}
-
-}
-
-
-
-.button {
-
-display:inline-block;
-
-margin-top:30px;
-
-padding:16px 45px;
-
-border-radius:50px;
-
-background:white;
-
-color:black;
-
-font-weight:600;
-
+color:white;
 text-decoration:none;
-
+margin-left:20px;
 transition:.3s;
 
 }
 
+nav a:hover {
 
-
-.button:hover {
-
-transform:scale(1.1);
-
-box-shadow:0 0 40px white;
+color:#00eaff;
+text-shadow:0 0 20px #00eaff;
 
 }
 
+
+
+/* Start */
+
+.hero {
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+
+.hero h1 {
+
+font-size:80px;
+margin:0;
+
+background:linear-gradient(90deg,#00eaff,#9d00ff);
+
+-webkit-background-clip:text;
+color:transparent;
+
+text-shadow:0 0 40px #00eaff;
+
+}
+
+
+.hero p {
+
+font-size:22px;
+color:#ccc;
+
+}
 
 
 
 section {
 
-max-width:1100px;
-
+max-width:1000px;
 margin:auto;
-
-padding:100px 25px;
+padding:90px 25px;
 
 }
 
@@ -224,31 +170,17 @@ padding:100px 25px;
 
 .card {
 
-background:rgba(255,255,255,0.08);
+background:rgba(255,255,255,.07);
 
-border:1px solid rgba(255,255,255,0.15);
+border:1px solid rgba(255,255,255,.15);
 
 backdrop-filter:blur(20px);
 
-padding:40px;
-
 border-radius:30px;
 
+padding:40px;
+
 box-shadow:0 0 40px rgba(0,234,255,.15);
-
-transition:.4s;
-
-}
-
-
-
-.card:hover {
-
-transform:translateY(-10px);
-
-box-shadow:
-0 0 30px #00eaff,
-0 0 60px #9d00ff;
 
 }
 
@@ -262,43 +194,88 @@ font-size:40px;
 
 
 
+.social {
 
-footer {
-
-text-align:center;
-
-padding:40px;
-
-color:#888;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
 
 }
 
 
 
+.button {
+
+padding:18px 35px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+color:white;
+
+background:#111;
+
+border:1px solid #333;
+
+transition:.4s;
+
+font-weight:600;
+
+}
+
+
+
+.tiktok:hover {
+
+box-shadow:
+0 0 20px #00f2ea,
+0 0 50px #ff0050;
+
+transform:scale(1.08);
+
+}
+
+
+
+.youtube:hover {
+
+box-shadow:
+0 0 30px red;
+
+transform:scale(1.08);
+
+}
+
+
+
+footer {
+
+text-align:center;
+padding:40px;
+color:#888;
+
+}
+
 </style>
 
-
 </head>
-
 
 
 <body>
 
 
-
 <header>
 
 <div class="logo">
-DEINE MARKE
+NordKraft0809
 </div>
 
 
 <nav>
 
-<a href="#about">Über uns</a>
-
-<a href="#contact">Kontakt</a>
-
+<a href="#about">Info</a>
+<a href="#social">Social</a>
 <a href="#impressum">Impressum</a>
 
 </nav>
@@ -311,29 +288,20 @@ DEINE MARKE
 
 <div class="hero">
 
-
 <div>
 
 <h1>
-Willkommen
+NordKraft0809
 </h1>
 
-
 <p>
-Eine moderne Website mit Premium Design.
+Standard ist uns nicht genug.
 </p>
 
 
-<a class="button" href="#contact">
-Kontakt
-</a>
-
-
 </div>
 
-
 </div>
-
 
 
 
@@ -342,9 +310,21 @@ Kontakt
 
 <div class="card">
 
-<h2>Über uns</h2>
+<h2>Über NordKraft0809</h2>
 
 <p>
+
+Wir stehen für den Anspruch, Dinge besser zu machen.
+<br><br>
+
+Ich möchte mich nicht mit dem Standard zufriedengeben.
+Verbessern, optimieren und neue Ideen umsetzen – genau darum geht es.
+
+<br><br>
+
+Jedes Projekt beginnt mit der Frage:
+<br>
+"Wie kann man es noch besser machen?"
 
 </p>
 
@@ -355,26 +335,30 @@ Kontakt
 
 
 
-
-<section id="contact">
+<section id="social">
 
 <div class="card">
 
-<h2>Kontakt</h2>
+<h2>Social Media</h2>
 
-<p>
-E-Mail: fynnelstolt@gmail.com
-</p>
 
-<p>
-Telefon: 0162 9563012
-</p>
+<div class="social">
+
+<a class="button tiktok" href="https://www.tiktok.com/@fynnelstolt">
+🎵 TikTok
+</a>
+
+
+<a class="button youtube" href="https://www.youtube.com/@Nordkraft0809">
+▶ YouTube
+</a>
 
 
 </div>
 
-</section>
+</div>
 
+</section>
 
 
 
@@ -386,10 +370,13 @@ Telefon: 0162 9563012
 <h2>Impressum</h2>
 
 <p>
+
 Fynn<br>
 24848<br>
-Kropp<br>
-Deutschland
+Kropp<br><br>
+
+E-Mail: fynnelstolt@gmail.com
+
 </p>
 
 </div>
@@ -404,7 +391,6 @@ Deutschland
 © 2026 NordKraft0809
 
 </footer>
-
 
 
 </body>
